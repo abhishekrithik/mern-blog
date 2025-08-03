@@ -1,14 +1,24 @@
-import { Alert, Button, FileInput, Select, TextInput } from 'flowbite-react';
+import {
+  Alert,
+  Button,
+  FileInput,
+  Select,
+  TextInput,
+} from 'flowbite-react';
 import ReactQuill from 'react-quill';
 import 'react-quill/dist/quill.snow.css';
 import { useState } from 'react';
 import { CircularProgressbar } from 'react-circular-progressbar';
 import 'react-circular-progressbar/dist/styles.css';
+import { useNavigate } from 'react-router-dom';
 
 export default function CreatePost() {
   const [file, setFile] = useState(null);
   const [imageUploadProgress, setImageUploadProgress] = useState(null);
   const [imageUploadError, setImageUploadError] = useState(null);
+  const [publishError, setPublishError] = useState(null);
+  const navigate = useNavigate();
+
   const [formData, setFormData] = useState({
     title: '',
     category: '',
@@ -17,11 +27,14 @@ export default function CreatePost() {
   });
 
   const handleChange = (e) => {
-    setFormData({ ...formData, [e.target.id || e.target.name]: e.target.value });
+    setFormData({
+      ...formData,
+      [e.target.id || e.target.name]: e.target.value,
+    });
   };
 
   const handleEditorChange = (value) => {
-    setFormData({ ...formData, content: value });
+    setFormData((prev) => ({ ...prev, content: value }));
   };
 
   const handleUploadImage = async () => {
@@ -36,7 +49,10 @@ export default function CreatePost() {
 
       const formDataCloud = new FormData();
       formDataCloud.append('file', file);
-      formDataCloud.append('upload_preset', import.meta.env.VITE_CLOUDINARY_UPLOAD_PRESET);
+      formDataCloud.append(
+        'upload_preset',
+        import.meta.env.VITE_CLOUDINARY_UPLOAD_PRESET
+      );
 
       const res = await fetch(
         `https://api.cloudinary.com/v1_1/${import.meta.env.VITE_CLOUDINARY_CLOUD_NAME}/image/upload`,
@@ -61,10 +77,42 @@ export default function CreatePost() {
     }
   };
 
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+
+    const cleanedFormData = { ...formData };
+    if (!cleanedFormData.image?.trim()) {
+      delete cleanedFormData.image;
+    }
+
+    try {
+      const res = await fetch('/api/post/create', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify(cleanedFormData),
+      });
+
+      const data = await res.json();
+
+      if (!res.ok) {
+        setPublishError(data.message || 'Failed to publish post');
+        return;
+      }
+
+      setPublishError(null);
+      navigate(`/post/${data.slug}`);
+    } catch (err) {
+      console.log(err);
+      setPublishError('Something went wrong. Try again.');
+    }
+  };
+
   return (
     <div className='p-3 max-w-3xl mx-auto min-h-screen'>
       <h1 className='text-center text-3xl my-7 font-semibold'>Create a post</h1>
-      <form className='flex flex-col gap-4'>
+      <form className='flex flex-col gap-4' onSubmit={handleSubmit}>
         <div className='flex flex-col gap-4 sm:flex-row justify-between'>
           <TextInput
             type='text'
@@ -137,6 +185,12 @@ export default function CreatePost() {
         <Button type='submit' gradientDuoTone='purpleToPink'>
           Publish
         </Button>
+
+        {publishError && (
+          <Alert className='mt-5' color='failure'>
+            {publishError}
+          </Alert>
+        )}
       </form>
     </div>
   );
