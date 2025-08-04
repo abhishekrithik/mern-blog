@@ -1,6 +1,7 @@
 import express from 'express';
 import mongoose from 'mongoose';
 import dotenv from 'dotenv';
+import cors from 'cors';
 import userRoutes from './routes/user.route.js';
 import authRoutes from './routes/auth.route.js';
 import postRoutes from './routes/post.route.js';
@@ -17,6 +18,14 @@ mongoose.connect( process.env.MONGO
     });
 
 const app = express();
+
+
+// 👉 2. Set up cors before anything else
+app.use(cors({
+  origin: 'http://localhost:5173',
+  credentials: true
+}));
+
 
 app.use(express.json());
 app.use(cookieParser());
