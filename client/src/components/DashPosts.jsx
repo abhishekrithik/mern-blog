@@ -6,7 +6,6 @@ import { HiOutlineExclamationCircle } from 'react-icons/hi';
 
 export default function DashPosts() {
   const { currentUser } = useSelector((state) => state.user);
-  console.log('User token:', currentUser?.token); // Optional: for debugging
 
   const [userPosts, setUserPosts] = useState([]);
   const [showMore, setShowMore] = useState(true);
