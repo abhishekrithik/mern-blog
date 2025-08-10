@@ -159,6 +159,7 @@ export default function UpdatePost() {
             <option value='education'>Education</option>
             <option value='finance'>Finance</option>
             <option value='technology'>Technology</option>
+            <option value='gym'>Gym</option>
           </Select>
         </div>
 
