@@ -110,11 +110,12 @@ Deploy frontend as Static Site on Render, and set the API URL to your backend Re
 
 ## 📸 Screenshots
 
-![Homepage Screenshot](![alt text](image.png))
-![Dashboard Screenshot](![alt text](image-2.png))
-![CreatePost Screenshot](![alt text](image-3.png))
-![PostsPage Screenshot](![alt text](image-4.png))
-![DarkmodeFunctionality Screenshot](!![alt text](image-5.png))
+![Homepage Screenshot](screenshots/home.png)
+![Dashboard Screenshot](screenshots/dashboard.png)
+![Create Post Screenshot](screenshots/createpost.png)
+![Posts Page Screenshot](screenshots/postspage.png)
+![Dark Mode Functionality Screenshot](screenshots/darkmode.png)
+
 
 📬 Contact
 Abhishek Gnanasekar
