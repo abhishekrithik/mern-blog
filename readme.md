@@ -113,15 +113,15 @@ Deploy frontend as Static Site on Render, and set the API URL to your backend Re
 ![Homepage Screenshot](screenshots/home.png)
 ![Dashboard Screenshot](screenshots/dashboard.png)
 ![Create Post Screenshot](screenshots/createpost.png)
-![Posts Page Screenshot](screenshots/postspage.png)
+![Posts Page Screenshot](screenshots/postpage.png)
 ![Dark Mode Functionality Screenshot](screenshots/darkmode.png)
 
 
 📬 Contact
 Abhishek Gnanasekar
 📧 abhishekgsts25@gmail.com
-[![GitHub](https://img.shields.io/badge/GitHub-abhishekrithik-blue?logo=github)](https://github.com/abhishekrithik)
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-Abhishek%20Gnanasekar-blue?logo=linkedin)](https://www.linkedin.com/in/abhishek-gnanasekar-888622211/)
+[**Github**](https://github.com/abhishekrithik)
+[**LinkedIn**](https://www.linkedin.com/in/abhishek-gnanasekar-888622211/)
 
 
 ⭐ If you like this project, don't forget to star the repo on GitHub!
