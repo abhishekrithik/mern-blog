@@ -5,9 +5,10 @@ This application allows users to create, read, update, and delete blog posts wit
 
 ---
 
-## 🚀 Live Demo
+## 🌐 Live Demo
 
----
+You can check out the live deployed version of the project here:  
+[**MERN Blog App**](https://mern-blog-saiabhi.onrender.com/)
 
 ## 📌 Features
 
@@ -48,27 +49,36 @@ This application allows users to create, read, update, and delete blog posts wit
 
 ## 🛠 Tech Stack
 
-### **Frontend**
+**Frontend:**
 
-- React (Vite)
-- Tailwind CSS + Flowbite
-- Redux Toolkit
+- React.js (Latest version)
+- Tailwind CSS
 - React Router DOM
+- Redux Toolkit & Redux Persist
+- Dark Mode with Tailwind
+- Google OAuth Integration
 
-### **Backend**
+**Backend:**
 
 - Node.js
 - Express.js
-- MongoDB + Mongoose
-- JWT Authentication
-- Bcrypt Password Hashing
+- MongoDB & Mongoose
+- JSON Web Tokens (JWT) Authentication
+- Middleware for Error Handling
 
-### **Others**
+**Features:**
 
-- Cloudinary for image uploads
-- dotenv for environment variables
+- Fully Responsive Design
+- CRUD Operations (Posts, Comments, Users)
+- Admin Dashboard with Role-Based Access
+- Advanced Search & Filtering with MongoDB Queries
+- Image Upload Functionality
+- Comment Like, Edit, and Delete System
+- Secure Routes (Private Pages)
 
----
+**Deployment:**
+
+- Render (Free Hosting for Full Stack)
 
 ## 📂 Project Structure
 
@@ -92,68 +102,27 @@ project/
 └── package.json
 ⚙️ Installation & Setup
 1️⃣ Clone the Repository
-bash
-Copy
-Edit
-git clone https://github.com/abhishekrithik/mern-blog.git
-cd mern-blog
-2️⃣ Setup Backend
-bash
-Copy
-Edit
-cd api
-npm install
-Create a .env file in the api folder and add:
 
-env
-Copy
-Edit
-MONGO_URI=your_mongodb_connection_string
-JWT_SECRET=your_jwt_secret
-CLOUDINARY_CLOUD_NAME=your_cloudinary_name
-CLOUDINARY_UPLOAD_PRESET=your_cloudinary_upload_preset
-PORT=5000
-Run the backend:
-
-bash
-Copy
-Edit
-npm start
-3️⃣ Setup Frontend
-bash
-Copy
-Edit
-cd ../client
-npm install
-Create a .env file in the client folder and add:
-
-env
-Copy
-Edit
-VITE_API_URL=http://localhost:5000
-VITE_CLOUDINARY_CLOUD_NAME=your_cloudinary_name
-VITE_CLOUDINARY_UPLOAD_PRESET=your_cloudinary_upload_preset
-Run the frontend:
-
-bash
-Copy
-Edit
-npm run dev
 🚀 Deployment on Render
 Deploy backend as Web Service on Render.
 
 Deploy frontend as Static Site on Render, and set the API URL to your backend Render URL.
 
-Make sure to set environment variables in Render's dashboard.
-
 📸 Screenshots
 (Add screenshots of your homepage, dashboard, and post creation page here)
+Home->c:\Users\ABISHEK\Pictures\Screenshots\Screenshot (87).png
+Dashboard->c:\Users\ABISHEK\Pictures\Screenshots\Screenshot (88).png
+CreatePost->c:\Users\ABISHEK\Pictures\Screenshots\Screenshot (89).png
+PostsPage->c:\Users\ABISHEK\Pictures\Screenshots\Screenshot (90).png
+DarkmodeFunctionality->c:\Users\ABISHEK\Pictures\Screenshots\Screenshot (91).png
+
 
 📬 Contact
 Abhishek Gnanasekar
 📧 abhishekgsts25@gmail.com
-🔗 GitHub
-🔗 LinkedIn
+[![GitHub](https://img.shields.io/badge/GitHub-abhishekrithik-blue?logo=github)](https://github.com/abhishekrithik)
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-Abhishek%20Gnanasekar-blue?logo=linkedin)](https://www.linkedin.com/in/abhishek-gnanasekar-888622211/)
+
 
 ⭐ If you like this project, don't forget to star the repo on GitHub!
 ```
