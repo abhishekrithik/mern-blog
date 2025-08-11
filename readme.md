@@ -108,14 +108,13 @@ Deploy backend as Web Service on Render.
 
 Deploy frontend as Static Site on Render, and set the API URL to your backend Render URL.
 
-📸 Screenshots
-(Add screenshots of your homepage, dashboard, and post creation page here)
-Home->c:\Users\ABISHEK\Pictures\Screenshots\Screenshot (87).png
-Dashboard->c:\Users\ABISHEK\Pictures\Screenshots\Screenshot (88).png
-CreatePost->c:\Users\ABISHEK\Pictures\Screenshots\Screenshot (89).png
-PostsPage->c:\Users\ABISHEK\Pictures\Screenshots\Screenshot (90).png
-DarkmodeFunctionality->c:\Users\ABISHEK\Pictures\Screenshots\Screenshot (91).png
+## 📸 Screenshots
 
+![Homepage Screenshot](![alt text](image.png))
+![Dashboard Screenshot](![alt text](image-2.png))
+![CreatePost Screenshot](![alt text](image-3.png))
+![PostsPage Screenshot](![alt text](image-4.png))
+![DarkmodeFunctionality Screenshot](!![alt text](image-5.png))
 
 📬 Contact
 Abhishek Gnanasekar
