@@ -135,6 +135,7 @@ export default function Search() {
               <option value='education'>Education</option>
               <option value='technology'>Technology</option>
               <option value='finance'>Finance</option>
+              <option value='Gym'>Gym</option>
             </Select>
           </div>
           <Button type='submit' outline gradientDuoTone='purpleToPink'>

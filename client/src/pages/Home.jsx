@@ -31,7 +31,7 @@ export default function Home() {
           <p>
             This is my little corner of the internet — a place where I share thoughts, 
             experiences, and knowledge on topics I’m passionate about: 
-            <span className='font-medium text-gray-700'> Travel, Education, Technology, and Finance</span>.
+            <span className='font-medium text-gray-700'> Travel, Education, Technology, Fitness and Finance</span>.
           </p>
           <p>
             From exploring breathtaking destinations to diving into tech trends and 
