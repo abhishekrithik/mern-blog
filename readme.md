@@ -110,7 +110,7 @@ project/
 **Abhishek Gnanasekar**
 📧 **Email:** [abhishekgsts25@gmail.com](mailto:abhishekgsts25@gmail.com)
 💻 **GitHub:** [abhishekrithik](https://github.com/abhishekrithik)
-💼 **LinkedIn:** [Abhishek Gnanasekar](https://www.linkedin.com/in/abhishek-gnanasekar-888622211/)
+💼 **LinkedIn:** [Abhishek Gnanasekar](https://www.linkedin.com/in/abhishek-gnanasekar/)
 
 ## ⭐ If you like this project, don't forget to star the repo on GitHub!
 

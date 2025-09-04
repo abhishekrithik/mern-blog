@@ -24,7 +24,7 @@ export default function FooterCom() {
               <Footer.Title title='About' />
               <Footer.LinkGroup col>
                 <Footer.Link
-                  href="https://www.linkedin.com/in/abhishek-gnanasekar-888622211/"
+                  href="https://www.linkedin.com/in/abhishek-gnanasekar/"
                   target='_blank'
                   rel='noopener noreferrer'
                 >
@@ -80,7 +80,7 @@ export default function FooterCom() {
             <Footer.Icon href="https://www.instagram.com/abhishek_rithik?igsh=Ymt1bXc4ZDc0ZDRy&utm_source=qr" icon={BsInstagram} />
             <Footer.Icon href="#" icon={BsTwitter} />
             <Footer.Icon href="https://github.com/abhishekrithik" icon={BsGithub} />
-            <Footer.Icon href="https://www.linkedin.com/in/abhishek-gnanasekar-888622211/" icon={BsLinkedin} />
+            <Footer.Icon href="https://www.linkedin.com/in/abhishek-gnanasekar/" icon={BsLinkedin} />
           </div>
         </div>
       </div>
