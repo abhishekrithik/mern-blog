@@ -8,7 +8,7 @@ export default function CallToAction() {
                 Want to know more about me?
             </h2>
             <p className='text-gray-500 my-2'>
-                Checkout these resources with my other Full Stack Projects
+                Check out my other Full Stack Projects and resources
             </p>
             <Button gradientDuoTone='purpleToPink' className='rounded-tl-xl rounded-bl-none'>
                 <a href="https://github.com/abhishekrithik" target='_blank' rel='noopener noreferrer'>

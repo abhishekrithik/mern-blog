@@ -31,11 +31,11 @@ export default function FooterCom() {
                   LinkedIn
                 </Footer.Link>
                 <Footer.Link
-                  href="/about"
+                  href="https://my3-dportfolio-vert.vercel.app/"
                   target='_blank'
                   rel='noopener noreferrer'
                 >
-                  Abhishek's Blog
+                  Portfolio
                 </Footer.Link>
               </Footer.LinkGroup>
             </div>
@@ -76,9 +76,9 @@ export default function FooterCom() {
             year={new Date().getFullYear()}
           />
           <div className="flex gap-6 sm:mt-0 mt-4 sm:justify-center">
-            <Footer.Icon href="#" icon={BsFacebook} />
+            <Footer.Icon href="https://my3-dportfolio-vert.vercel.app/" icon={BsFacebook} />
             <Footer.Icon href="https://www.instagram.com/abhishek_rithik?igsh=Ymt1bXc4ZDc0ZDRy&utm_source=qr" icon={BsInstagram} />
-            <Footer.Icon href="#" icon={BsTwitter} />
+            <Footer.Icon href="https://my3-dportfolio-vert.vercel.app/" icon={BsTwitter} />
             <Footer.Icon href="https://github.com/abhishekrithik" icon={BsGithub} />
             <Footer.Icon href="https://www.linkedin.com/in/abhishek-gnanasekar/" icon={BsLinkedin} />
           </div>
